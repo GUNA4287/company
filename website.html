@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tokeyo</title>
+  <meta name="description" content="Professional web development services for modern businesses." />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Hero Section Styling */
+    .hero-section {
+      position: relative;
+      height: 100vh;
+      background: url('data/webdevlopment.gif') center/cover no-repeat fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      z-index: 1;
+    }
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.2));
+      z-index: -1;
+    }
+    .hero-section h1, .hero-section p {
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+    }
+
+    /* Section background styling */
+    .section-bg {
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      padding: 60px 0;
+    }
+    /* Frosted glass effect */
+    .section-wrapper {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(25px);
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Text color helpers */
+    .dark-text {
+      color: #222 !important;
+    }
+    .light-text {
+      color: #f5f5f5 !important;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+    }
+
+    /* Section title */
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    /* Animation Base */
+    .animate {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease;
+    }
+    .animate.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .fade-in { transform: translateY(30px); }
+    .slide-in-left { transform: translateX(-50px); }
+    .slide-in-right { transform: translateX(50px); }
+    .zoom-in { transform: scale(0.8); }
+    .fade-in.show, .slide-in-left.show, .slide-in-right.show, .zoom-in.show {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* 3D Contact Button */
+     .contact-btn {
+    position: fixed;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    z-index: 999;
+    padding: 12px 20px;
+    font-weight: bold;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+    
+    .contact-btn:hover {
+      background-color: white;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <h1 class="display-4 fw-bold">Professional Web Development Services</h1>
+    <p class="lead">Creating modern, responsive, and user-friendly websites for your business</p>
+  </section>
+
+  <!-- Section 1 -->
+  <section class="section-bg" style="background-image: url('data/webdevlopment.gif');">
+    <div class="container section-wrapper animate fade-in light-text">
+      <h2 class="section-title">What is Web Development?</h2>
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6"  style=" color: rgb(250, 247, 247); font-size: larger;">
+          <h5 style="font-weight: bold;">About Web Development</h5>
+          <p style="font-weight: bold; color: rgb(12, 11, 11); font-size: larger;text-shadow: 5px 5px 5px rgb(240, 234, 234);">Web development is the process of building and maintaining websites. It involves everything from designing the look and feel of your site to making it function smoothly across all devices. A well-developed website helps you attract customers, improve brand presence, and grow your business online.</p>
+        </div>
+        <div class="col-md-6">
+          <img src="data/aboutimg.gif" alt="Web Development" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2 -->
+  <section class="section-bg" style="background-image: url('data/webdevlopment.gif');">
+    <div class="container section-wrapper animate slide-in-left dark-text">
+      <h2 class="section-title">Why Choose Me?</h2>
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6">
+          <img src="data/pro.gif" alt="Web Development" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+          <h5 style="color:  rgb(24, 23, 23); font-size:30px; font-weight: bold; ">My Strengths</h5>
+          <ul style="color: rgb(255, 255, 255);font-weight: bold;font-size: larger; text-shadow: 5px 5px 3px rgb(14, 13, 13);">
+            <li>Pixel-perfect designs and flawless functionality</li>
+            <li>Responsive layouts for all devices</li>
+            <li>Fast delivery without compromising quality</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3 -->
+  <section class="section-bg" style="background-image: url('data/webdevlopment.gif');">
+    <div class="container section-wrapper animate slide-in-right light-text">
+      <h2 class="section-title">Our Web Development Process</h2>
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6" style="color:  rgb(241, 236, 236);">
+          <h5 style=" font-size: 30px;">Step-by-Step</h5>
+          <ol style="font-weight: bold; font-size: larger; color: black;text-shadow: 5px 5px 5px rgb(240, 234, 234);">
+            <li>Planning: Understanding your needs and goals</li>
+            <li>Design: Crafting a visually appealing layout</li>
+            <li>Development: Building with clean, efficient code</li>
+            <li>Launch & Support: Testing, deploying, and ongoing support</li>
+          </ol>
+        </div>
+        <div class="col-md-6">
+          <img src="data/proitimg.gif" alt="Web Development" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4 -->
+  <section class="section-bg" style="background-image: url('data/webdevlopment.gif');">
+    <div class="container section-wrapper animate zoom-in dark-text">
+      <h2 class="section-title">Let's Work Together</h2>
+      <p class="text-center">Whether you need a small business website or a complex web application, I can help you achieve your goals with top-quality web solutions.</p>
+    </div>
+  </section>
+
+  <!-- 3D Contact Button -->
+<a href="index.html#contact" class="btn btn-primary contact-btn">Contact</a>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Intersection Observer for animations -->
+  <script>
+    const elements = document.querySelectorAll('.animate');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    elements.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tokeyo </title>
+  <meta name="description" content="Expert digital marketing services to grow your online presence, drive targeted traffic, and boost sales." />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Hero Section Styling */
+    .hero-section {
+      position: relative;
+      height: 100vh;
+      background: url('data/digitalmarket.gif') center/cover no-repeat fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      z-index: 1;
+    }
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.2));
+      z-index: -1;
+    }
+    .hero-section h1, .hero-section p {
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.7);
+    }
+
+    /* Section background styling */
+    .section-bg {
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      padding: 60px 0;
+    }
+    /* Frosted glass effect */
+    .section-wrapper {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(55px);
+      -webkit-backdrop-filter: blur(25px);
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Text color helpers */
+    .dark-text {
+      color: #222 !important;
+    }
+    .light-text {
+      color: #f5f5f5 !important;
+      text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
+    }
+
+    /* Section title */
+    .section-title {
+      font-weight: bold;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    /* Animation Base */
+    .animate {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 1s ease;
+    }
+    .animate.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .fade-in { transform: translateY(30px); }
+    .slide-in-left { transform: translateX(-50px); }
+    .slide-in-right { transform: translateX(50px); }
+    .zoom-in { transform: scale(0.8); }
+    .fade-in.show, .slide-in-left.show, .slide-in-right.show, .zoom-in.show {
+      opacity: 1;
+      transform: none;
+    }
+
+    /* 3D Contact Button */
+    .contact-btn {
+      position: fixed;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      z-index: 999;
+      padding: 12px 20px;
+      font-weight: bold;
+      border-radius: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    }
+    .contact-btn:hover {
+      background-color: white;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <h1 class="display-4 fw-bold">Digital Marketing Services</h1>
+    <p class="lead">Reach more customers, increase engagement, and grow your brand with data-driven strategies</p>
+  </section>
+
+  <!-- Section 1 -->
+  <section class="section-bg" style="background-image: url('data/digitalmarket.gif');">
+    <div class="container section-wrapper animate fade-in light-text">
+      <h2 class="section-title">What is Digital Marketing?</h2>
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6" style="color: #faf7f7; font-size: larger;">
+          <h5 style="font-weight: bold;">About Digital Marketing</h5>
+          <p style="font-weight: bold; color: #0c0b0b; font-size: larger; text-shadow: 5px 5px 5px #f0eaea;">
+            Digital marketing uses online channels like social media, search engines, email, and websites to connect with customers. It’s all about reaching the right audience, at the right time, with the right message.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <img src="data/digital mark.gif" alt="Digital Marketing Overview" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2 -->
+  <section class="section-bg" style="background-image: url('data/digitalmarket.gif');">
+    <div class="container section-wrapper animate slide-in-left dark-text">
+      <h2 class="section-title">Why Choose Our Digital Marketing Services?</h2>
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6">
+          <img src="data/pro.gif" alt="Digital Marketing Benefits" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+          <h5 style="color: #181717; font-size: 30px; font-weight: bold;">Our Strengths</h5>
+          <ul style="color: #fff; font-weight: bold; font-size: larger; text-shadow: 5px 5px 3px #0e0d0d;">
+            <li>Targeted social media advertising</li>
+            <li>High-converting email campaigns</li>
+            <li>Content creation & brand storytelling</li>
+            <li>Real-time analytics & reporting</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3 -->
+  <section class="section-bg" style="background-image: url('data/digitalmarket.gif');">
+    <div class="container section-wrapper animate slide-in-right light-text">
+      <h2 class="section-title">Our Digital Marketing Process</h2>
+      <div class="row g-4 align-items-center">
+        <div class="col-md-6" style="color: #f1ecec;">
+          <h5 style="font-size: 30px;">Step-by-Step</h5>
+          <ol style="font-weight: bold; font-size: larger; color: black; text-shadow: 5px 5px 5px #f0eaea;">
+            <li>Market research & strategy development</li>
+            <li>Content & campaign creation</li>
+            <li>Multi-channel distribution & promotion</li>
+            <li>Performance tracking & optimization</li>
+          </ol>
+        </div>
+        <div class="col-md-6">
+          <img src="data/market process.gif" alt="Digital Marketing Process" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4 -->
+  <section class="section-bg" style="background-image: url('data/digitalmarket.gif');">
+    <div class="container section-wrapper animate zoom-in dark-text">
+      <h2 class="section-title">Let’s Grow Your Brand</h2>
+      <p class="text-center">Our experts craft customized campaigns to drive engagement, generate leads, and increase sales for your business.</p>
+    </div>
+  </section>
+
+  <!-- 3D Contact Button -->
+  <a href="index.html#contact" class="btn btn-primary contact-btn">Contact</a>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Intersection Observer for animations -->
+  <script>
+    const elements = document.querySelectorAll('.animate');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+        }
+      });
+    }, { threshold: 0.2 });
+
+    elements.forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

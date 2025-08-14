@@ -1,0 +1,127 @@
+<!-- 🌊 Wave Animation -->
+<div class="wave-container">
+  <svg class="waves" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 200" preserveAspectRatio="none">
+    <defs>
+      <linearGradient id="footerWaveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+        <stop offset="0%" style="stop-color:#0f2027; stop-opacity:1" />
+        <stop offset="50%" style="stop-color:#203a43; stop-opacity:1" />
+        <stop offset="100%" style="stop-color:#2c5364; stop-opacity:1" />
+      </linearGradient>
+    </defs>
+
+    <!-- Back wave -->
+    <path fill="url(#footerWaveGradient)" fill-opacity="0.5">
+      <animate 
+        attributeName="d" 
+        dur="12s" 
+        repeatCount="indefinite" 
+        values="
+          M0,120L60,140C120,160,240,200,360,180C480,160,600,100,720,90C840,80,960,120,1080,140C1200,160,1320,140,1380,120L1440,100L1440,200L0,200Z;
+          M0,100L60,120C120,140,240,180,360,170C480,160,600,120,720,110C840,100,960,140,1080,150C1200,160,1320,120,1380,110L1440,100L1440,200L0,200Z;
+          M0,120L60,140C120,160,240,200,360,180C480,160,600,100,720,90C840,80,960,120,1080,140C1200,160,1320,140,1380,120L1440,100L1440,200L0,200Z
+        ">
+      </animate>
+    </path>
+
+    <!-- Middle wave -->
+    <path fill="url(#footerWaveGradient)" fill-opacity="0.7">
+      <animate 
+        attributeName="d" 
+        dur="8s" 
+        repeatCount="indefinite" 
+        values="
+          M0,96L48,112C96,128,192,160,288,154.7C384,149,480,107,576,101.3C672,96,768,128,864,138.7C960,149,1056,139,1152,122.7C1248,107,1344,85,1392,74.7L1440,64L1440,200L0,200Z;
+          M0,80L48,90.7C96,101,192,122,288,117.3C384,112,480,80,576,74.7C672,69,768,91,864,106.7C960,123,1056,133,1152,133.3C1248,133,1344,107,1392,90.7L1440,80L1440,200L0,200Z;
+          M0,96L48,112C96,128,192,160,288,154.7C384,149,480,107,576,101.3C672,96,768,128,864,138.7C960,149,1056,139,1152,122.7C1248,107,1344,85,1392,74.7L1440,64L1440,200L0,200Z
+        ">
+      </animate>
+    </path>
+
+    <!-- Front wave -->
+    <path fill="url(#footerWaveGradient)" fill-opacity="1">
+      <animate 
+        attributeName="d" 
+        dur="6s" 
+        repeatCount="indefinite" 
+        values="
+          M0,80L40,95C80,110,160,140,240,135C320,130,400,90,480,85C560,80,640,110,720,120C800,130,880,110,960,100C1040,90,1120,110,1200,115C1280,120,1360,100,1400,90L1440,80L1440,200L0,200Z;
+          M0,70L40,80C80,90,160,120,240,125C320,130,400,110,480,100C560,90,640,110,720,115C800,120,880,110,960,105C1040,100,1120,120,1200,125C1280,130,1360,110,1400,100L1440,90L1440,200L0,200Z;
+          M0,80L40,95C80,110,160,140,240,135C320,130,400,90,480,85C560,80,640,110,720,120C800,130,880,110,960,100C1040,90,1120,110,1200,115C1280,120,1360,100,1400,90L1440,80L1440,200L0,200Z
+        ">
+      </animate>
+    </path>
+  </svg>
+</div>
+
+
+
+<!-- Footer -->
+<footer class="footer py-5 mt-0" 
+  style="background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); color: white;"
+  data-aos="fade-up" data-aos-duration="1200">
+
+  <div class="container">
+    <div class="row gy-4">
+
+      <!-- Logo & Description -->
+      <div class="col-md-4" data-aos="fade-right" data-aos-delay="100">
+        <img src="assets/logo-footer.png" alt="DCI" style="height:36px; filter: drop-shadow(0 0 5px cyan);">
+        <p class="small mt-3 text-light">
+          DCI Technologies — Creative digital solutions for web, publishing and marketing.
+        </p>
+      </div>
+
+      <!-- Services -->
+      <div class="col-md-2" data-aos="zoom-in" data-aos-delay="200">
+        <h6 class="text-info">Services</h6>
+        <ul class="list-unstyled small">
+          <li><a class="footer-link" href="#services">Web Dev</a></li>
+          <li><a class="footer-link" href="#services">Digital Marketing</a></li>
+          <li><a class="footer-link" href="#services">SEO</a></li>
+        </ul>
+      </div>
+
+      <!-- Resources -->
+      <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300">
+        <h6 class="text-info">Resources</h6>
+        <ul class="list-unstyled small">
+          <li><a class="footer-link" href="#blog">Blog</a></li>
+          <li><a class="footer-link" href="#work">Case Studies</a></li>
+          <li><a class="footer-link" href="#career">Careers</a></li>
+        </ul>
+      </div>
+
+      <!-- Socials -->
+      <div class="col-md-3" data-aos="fade-left" data-aos-delay="400">
+        <h6 class="text-info">Follow Us</h6>
+        <div class="d-flex gap-2">
+          <a class="social-btn" href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a class="social-btn" href="#"><i class="fab fa-twitter"></i></a>
+          <a class="social-btn" href="#"><i class="fab fa-facebook-f"></i></a>
+        </div>
+
+        <small class="d-block mt-3 text-light">
+          © <span id="year"></span> DCI Technologies. All rights reserved.
+        </small>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+<style>
+.wave-container {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  overflow: hidden;
+  line-height: 0;
+  background: transparent;
+}
+.waves {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100px;
+}
+</style>

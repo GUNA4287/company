@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tokeyo</title>
+  <meta name="description" content="Creative UI/UX design services to craft intuitive, user-friendly, and visually stunning digital experiences." />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      font-family: 'Poppins', sans-serif;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      position: relative;
+      height: 100vh;
+      background: url('data/j grapical.gif') center/cover no-repeat fixed;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+    }
+    .hero-section::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.55);
+      backdrop-filter: blur(4px);
+      z-index: 0;
+    }
+    .hero-section h1 {
+      font-size: 3rem;
+      font-weight: 700;
+      z-index: 1;
+    }
+    .hero-section p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      z-index: 1;
+    }
+
+    /* Frosted Glass Card */
+    .section-wrapper {
+      background: rgba(255, 255, 255, 0.15);
+      backdrop-filter: blur(15px);
+      -webkit-backdrop-filter: blur(15px);
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .section-wrapper:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.25);
+    }
+
+    .section-title {
+      font-weight: 700;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    /* 3D Contact Button */
+    .contact-btn {
+      position: fixed;
+      top: 50%;
+      right: 20px;
+      transform: translateY(-50%);
+      z-index: 999;
+      padding: 12px 20px;
+      font-weight: 600;
+      border-radius: 30px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      background: linear-gradient(135deg, #3a6ff7, #00c6ff);
+      border: none;
+      transition: 0.3s;
+    }
+    .contact-btn:hover {
+      transform: translateY(-50%) scale(1.05);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.4);
+    }
+
+    /* Animation Base */
+    .animate {
+      opacity: 0;
+      transform: translateY(50px);
+      transition: all 0.8s ease;
+    }
+    .animate.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <h1 class="display-4 fw-bold">UI/UX Design Services</h1>
+    <p class="lead">We craft intuitive, engaging, and beautiful digital experiences that users love.</p>
+  </section>
+
+  <!-- Section 1 -->
+  <section class="py-5" style="background: url('data/j grapical.gif') center/cover fixed;">
+    <div class="container section-wrapper animate">
+      <h2 class="section-title">What is UI/UX Design?</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <p class="fw-semibold">
+            UI/UX design focuses on creating seamless interactions and visually appealing layouts. While UX (User Experience) ensures usability and functionality, UI (User Interface) emphasizes the aesthetic and interactive elements.
+          </p>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="data/ui.gif" alt="UI/UX Overview" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 2 -->
+  <section class="py-5" style="background: url('data/j grapical.gif') center/cover fixed;">
+    <div class="container section-wrapper animate">
+      <h2 class="section-title">Why Choose Our UI/UX Services?</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6 text-center">
+          <img src="data/ui service.gif" alt="UI/UX Benefits" class="img-fluid rounded">
+        </div>
+        <div class="col-md-6">
+          <ul class="fw-semibold">
+            <li>User research & persona creation</li>
+            <li>Wireframes & interactive prototypes</li>
+            <li>Responsive and mobile-friendly layouts</li>
+            <li>Visual branding and style guides</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 3 -->
+  <section class="py-5" style="background: url('data/j grapical.gif') center/cover fixed;">
+    <div class="container section-wrapper animate">
+      <h2 class="section-title">Our UI/UX Design Process</h2>
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <ol class="fw-semibold">
+            <li>Research & discovery phase</li>
+            <li>Wireframing & prototyping</li>
+            <li>Visual design & branding</li>
+            <li>Usability testing & final launch</li>
+          </ol>
+        </div>
+        <div class="col-md-6 text-center">
+          <img src="data/ui process.gif" alt="UI/UX Process" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 4 -->
+  <section class="py-5" style="background: url('data/j grapical.gif') center/cover fixed;">
+    <div class="container section-wrapper animate">
+      <h2 class="section-title">Let’s Design Something Amazing</h2>
+      <p class="text-center">Our team of designers blends creativity with functionality to deliver products that delight users and achieve business goals.</p>
+    </div>
+  </section>
+
+  <!-- Contact Button -->
+  <a href="index.html#contact" class="btn contact-btn text-white">Contact</a>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Animation -->
+  <script>
+    const elements = document.querySelectorAll('.animate');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('show');
+      });
+    }, { threshold: 0.2 });
+
+    elements.forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
